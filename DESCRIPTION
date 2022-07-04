@@ -1,6 +1,6 @@
 Package: potential
 Title: Implementation of the Potential Model
-Version: 0.1.0
+Version: 0.2.0
 Authors@R: c(
       person("Timothée", "Giraud", email = "timothee.giraud@cnrs.fr", role = c("cre","aut"),
              comment = c(ORCID = "0000-0002-1932-3323")),
@@ -13,18 +13,18 @@ Description: Provides functions to compute the potential model as defined by
 Depends: R (>= 3.5.0)
 License: GPL-3
 LazyData: true
-Imports: sf, graphics, methods, isoband, parallel, doParallel, foreach
-Suggests: covr, lwgeom, cartography, knitr, tinytest, rmarkdown
-SystemRequirements: GDAL (>= 2.0.1), GEOS (>= 3.4.0), PROJ.4 (>= 4.8.0)
+Imports: sf, graphics, mapiso, parallel, doParallel, foreach
+Suggests: covr, lwgeom, eurostat, giscoR, mapsf, knitr, tinytest,
+        rmarkdown
 URL: https://github.com/riatelab/potential
 BugReports: https://github.com/riatelab/potential/issues
 Encoding: UTF-8
-RoxygenNote: 7.1.1
 VignetteBuilder: knitr
+RoxygenNote: 7.2.0
 NeedsCompilation: no
-Packaged: 2020-11-12 10:44:28 UTC; tim
+Packaged: 2022-07-04 12:56:01 UTC; tim
 Author: Timothée Giraud [cre, aut] (<https://orcid.org/0000-0002-1932-3323>),
   Hadrien Commenges [aut]
 Maintainer: Timothée Giraud <timothee.giraud@cnrs.fr>
 Repository: CRAN
-Date/Publication: 2020-11-18 09:40:02 UTC
+Date/Publication: 2022-07-05 00:20:07 UTC

@@ -1,6 +1,6 @@
 #' @title Compute the Potential Model
 #' @name potential
-#' @description This function computes the potential mo^del as defined
+#' @description This function computes the potential model as defined
 #' by J.Q. Stewart (1941).
 #' @param x an sf object (POINT), the set of known observations to
 #' estimate the potentials from.
@@ -39,8 +39,7 @@
 #' @references
 #' STEWART, JOHN Q. 1941. "An Inverse Distance Variation for Certain Social
 #' Influences." \emph{Science} 93 (2404): 89–90.
-#' \url{https://doi.org/10.1126/science.93.2404.89}.
-#' @importFrom methods is as
+#' \doi{10.1126/science.93.2404.89}.
 #' @importFrom sf st_as_sf
 #' @export
 potential <- function(x, y, d, var, fun, span, beta) {
