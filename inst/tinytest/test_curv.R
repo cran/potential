@@ -64,3 +64,16 @@ if(home){
     x = n3_pt, y = g, var = "POP19",
     fun = "p", span = 200000, beta = 2, ncl = 1))
 }
+
+
+
+expect_error(create_grid(x = 3, res = 100))
+
+expect_error(potential:::test_point(3, "E"))
+
+expect_silent(potential:::test_point(g, "E"))
+
+expect_error(equipotential("toto", "toto"))
+
+expect_error(potential:::test_point(n3_poly, "popo"))
+

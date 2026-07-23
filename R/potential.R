@@ -35,7 +35,7 @@
 #' )
 #' y$OUTPUT <- pot
 #' equipot <- equipotential(y, var = "OUTPUT", mask = n3_poly)
-#' plot(equipot["center"], pal = hcl.colors(nrow(equipot), "cividis"))
+#' plot(equipot["center"])
 #' @references
 #' STEWART, JOHN Q. 1941. "An Inverse Distance Variation for Certain Social
 #' Influences." \emph{Science} 93 (2404): 89–90.
@@ -43,6 +43,8 @@
 #' @importFrom sf st_as_sf
 #' @export
 potential <- function(x, y, d, var, fun, span, beta) {
+  test_point(x, "x")
+  test_point(y, "y")
   result <- prepare_data(x = x, y = y, d = d)
   matdens <- interact_density(
     d = result$d,
